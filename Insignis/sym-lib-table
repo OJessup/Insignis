@@ -40,4 +40,5 @@
   (lib (name "CONREVSMA003.062-G")(type "KiCad")(uri "/Users/oliver/Desktop/Rocketry/SRAD Flight Computer/CONREVSMA003.062-G/CONREVSMA003.062-G.kicad_sym")(options "")(descr ""))
   (lib (name "RFD900UX Module")(type "Altium")(uri "/Users/oliver/Downloads/RFD900ux Altium Library/RFD900UX Module.SCHLIB")(options "")(descr ""))
   (lib (name "EMMC32G-TS0A-01002")(type "KiCad")(uri "/Users/oliver/Downloads/LIB_EMMC32G-TS0A-01002/EMMC32G-TS0A-01002/KiCad/EMMC32G-TS0A-01002.kicad_sym")(options "")(descr ""))
+  (lib (name "MCP9600-E_MX")(type "KiCad")(uri "/Users/oliver/Downloads/LIB_MCP9600-E_MX/MCP9600-E_MX/KiCad/MCP9600-E_MX.kicad_sym")(options "")(descr ""))
 )

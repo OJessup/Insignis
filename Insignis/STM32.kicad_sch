@@ -325,20 +325,22 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Y4"
-				(at 11.43 3.4289 0)
+			(property "Reference" "Y"
+				(at 3.175 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "Crystal_GND24"
-				(at 11.43 0.8889 0)
+				(at 3.175 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -435,35 +437,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 -3.81) (xy -1.27 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
 					(start -1.143 2.54)
 					(end 1.143 -2.54)
 					(stroke
 						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.27 -3.81)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -516,7 +494,7 @@
 				)
 				(pin passive line
 					(at -1.27 -5.08 90)
-					(length 1.27)
+					(length 1.524)
 					(name "4"
 						(effects
 							(font
@@ -534,7 +512,7 @@
 				)
 				(pin passive line
 					(at 1.27 -5.08 90)
-					(length 1.27)
+					(length 1.524)
 					(name "2"
 						(effects
 							(font
@@ -2636,8 +2614,12 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2737,8 +2719,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "+3V3"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2758,8 +2739,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2835,8 +2820,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2886,22 +2870,16 @@
 		(uuid "1e75fa35-8b98-43ed-9b4e-a8a2aa05003a")
 	)
 	(junction
-		(at 138.43 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f65d0a1-f3a3-4371-9fc0-271592b19c80")
-	)
-	(junction
-		(at 138.43 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c08d135-5e34-47f6-b32c-bf5a3a548616")
-	)
-	(junction
 		(at 133.35 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41eb35bc-3ab5-401c-8b6d-2fd8558f58cd")
+	)
+	(junction
+		(at 137.16 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ce10069-2d86-4d3c-9a7d-e419f0300a1a")
 	)
 	(junction
 		(at 33.02 54.61)
@@ -2940,16 +2918,16 @@
 		(uuid "b685e21a-4e56-4f80-aeb5-93bdfb46c8b6")
 	)
 	(junction
-		(at 116.84 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cb113761-b7f3-4658-8ce3-c7ffbc00bfd9")
-	)
-	(junction
 		(at 195.58 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d957e640-b72f-48eb-8815-0687baa8138e")
+	)
+	(junction
+		(at 137.16 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e840e89d-2813-42ab-a163-e0fa44b39e34")
 	)
 	(junction
 		(at 26.67 102.87)
@@ -3181,6 +3159,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 80.01) (xy 138.43 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10cdd295-7311-46ce-8dd2-ff5bae39bc13")
+	)
+	(wire
+		(pts
 			(xy 106.68 69.85) (xy 114.3 69.85)
 		)
 		(stroke
@@ -3401,6 +3389,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 80.01) (xy 135.89 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3457ae16-b710-4530-926b-90667371e3d0")
+	)
+	(wire
+		(pts
 			(xy 106.68 59.69) (xy 140.97 59.69)
 		)
 		(stroke
@@ -3448,16 +3446,6 @@
 			(type default)
 		)
 		(uuid "3a7551b4-8dad-41dd-b450-c4b5dcdddb36")
-	)
-	(wire
-		(pts
-			(xy 135.89 80.01) (xy 135.89 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f086b0c-b0c5-45d7-b6e6-809381efeb57")
 	)
 	(wire
 		(pts
@@ -3551,7 +3539,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.325 106.045) (xy 194.945 106.045)
+			(xy 187.96 106.68) (xy 195.58 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3571,7 +3559,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 81.28) (xy 138.43 81.28)
+			(xy 135.89 81.28) (xy 137.16 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3691,16 +3679,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 100.33) (xy 120.65 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fd144f7-e774-4bc2-86ad-b55aa2b7cb7d")
-	)
-	(wire
-		(pts
 			(xy 26.67 85.09) (xy 66.04 85.09)
 		)
 		(stroke
@@ -3741,7 +3719,7 @@
 	)
 	(wire
 		(pts
-			(xy 202.565 106.045) (xy 211.455 106.045)
+			(xy 203.2 106.68) (xy 212.09 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3778,16 +3756,6 @@
 			(type default)
 		)
 		(uuid "7c211632-603b-4ebf-a6d9-13d5b16c2ed1")
-	)
-	(wire
-		(pts
-			(xy 138.43 88.9) (xy 133.35 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c4e946a-9abc-491c-beeb-e1bf9f9162f3")
 	)
 	(wire
 		(pts
@@ -3828,16 +3796,6 @@
 			(type default)
 		)
 		(uuid "88b1de67-f74d-4cc6-8116-bdfa5db45ceb")
-	)
-	(wire
-		(pts
-			(xy 138.43 81.28) (xy 138.43 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89ccd3e9-23a2-4b7f-af12-3c452dba059d")
 	)
 	(wire
 		(pts
@@ -3901,7 +3859,7 @@
 	)
 	(wire
 		(pts
-			(xy 202.565 88.265) (xy 211.455 88.265)
+			(xy 203.2 88.9) (xy 212.09 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3918,6 +3876,16 @@
 			(type default)
 		)
 		(uuid "972c3fe4-121c-4be0-8054-1e802e3e7574")
+	)
+	(wire
+		(pts
+			(xy 137.16 81.28) (xy 138.43 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "987feaad-9b20-4586-a6a1-2ff8761f046f")
 	)
 	(wire
 		(pts
@@ -3938,6 +3906,16 @@
 			(type default)
 		)
 		(uuid "9cb7a5d4-a3fa-4d40-b26f-8eb6c31c7322")
+	)
+	(wire
+		(pts
+			(xy 137.16 81.28) (xy 137.16 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e1404a8-60be-4f5d-aee5-cbe345915c91")
 	)
 	(wire
 		(pts
@@ -3991,6 +3969,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 88.9) (xy 133.35 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a744a132-f80d-4539-aa47-e7f56aa2c7be")
+	)
+	(wire
+		(pts
 			(xy 109.22 36.83) (xy 109.22 39.37)
 		)
 		(stroke
@@ -4041,7 +4029,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.325 88.265) (xy 194.945 88.265)
+			(xy 187.96 88.9) (xy 195.58 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4088,16 +4076,6 @@
 			(type default)
 		)
 		(uuid "b519556a-bf32-4fc9-929a-4328b5ae47dd")
-	)
-	(wire
-		(pts
-			(xy 138.43 81.28) (xy 138.43 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b64f4db5-be93-48e1-a6c2-4b1e2550faa6")
 	)
 	(wire
 		(pts
@@ -4311,7 +4289,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 88.9) (xy 138.43 88.9)
+			(xy 137.16 88.9) (xy 140.97 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4389,6 +4367,26 @@
 		)
 		(uuid "fc2ba308-0d39-44b3-8ae7-54ee32e87300")
 	)
+	(label "RESET"
+		(at 184.15 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae423383-8539-48e6-b23d-15f3426f1f65")
+	)
+	(label "RESET"
+		(at 106.68 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da05a66e-4864-4b5a-8643-ecefe0e322c2")
+	)
 	(global_label "BUZZER"
 		(shape input)
 		(at 114.3 80.01 0)
@@ -4413,7 +4411,7 @@
 	)
 	(global_label "SCL"
 		(shape input)
-		(at 211.455 88.265 0)
+		(at 212.09 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4423,7 +4421,7 @@
 		)
 		(uuid "1599df10-0d92-4784-bb73-1a2dfef01928")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.8684 88.265 0)
+			(at 218.5034 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5205,7 +5203,7 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 211.455 106.045 0)
+		(at 212.09 106.68 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5215,7 +5213,7 @@
 		)
 		(uuid "de8870d1-ac50-4d3f-9045-69fdc00df296")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.9289 106.045 0)
+			(at 218.5639 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5291,28 +5289,6 @@
 			)
 		)
 	)
-	(hierarchical_label "RESET"
-		(shape input)
-		(at 120.65 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3420e915-7c2e-4f1a-90a2-7cce6e42e66b")
-	)
-	(hierarchical_label "RESET"
-		(shape input)
-		(at 184.15 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ee16e362-2537-42f5-90dc-be0762992a90")
-	)
 	(symbol
 		(lib_id "power:GND")
 		(at 254 40.64 0)
@@ -5358,12 +5334,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 254 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5491,12 +5468,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 29.21 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5555,12 +5533,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 63.5 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5687,12 +5666,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 144.78 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5822,12 +5802,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 137.16 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5887,12 +5868,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 254 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6021,12 +6003,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 153.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6043,7 +6026,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 198.755 106.045 90)
+		(at 199.39 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6051,7 +6034,7 @@
 		(dnp no)
 		(uuid "480d21ca-6122-4393-b718-9262121d631d")
 		(property "Reference" "R14"
-			(at 199.39 101.6 90)
+			(at 200.025 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6060,7 +6043,7 @@
 			)
 		)
 		(property "Value" "3.3kΩ"
-			(at 200.66 103.505 90)
+			(at 201.295 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6069,7 +6052,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 198.755 107.823 90)
+			(at 199.39 108.458 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6078,7 +6061,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 198.755 106.045 0)
+			(at 199.39 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6087,7 +6070,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 198.755 106.045 0)
+			(at 199.39 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6154,12 +6137,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 219.71 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6218,12 +6202,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 26.67 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6420,12 +6405,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 173.99 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6622,12 +6608,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 33.02 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6687,12 +6674,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 33.02 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6752,12 +6740,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 236.22 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6817,12 +6806,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 189.23 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6881,12 +6871,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 154.94 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6945,12 +6936,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 140.97 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7170,7 +7162,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 187.325 88.265 0)
+		(at 187.96 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7178,7 +7170,7 @@
 		(dnp no)
 		(uuid "910dda0b-513b-47ff-aecc-8db303490326")
 		(property "Reference" "#PWR0115"
-			(at 187.325 92.075 0)
+			(at 187.96 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7187,7 +7179,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 184.15 83.82 0)
+			(at 184.785 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7196,7 +7188,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.325 88.265 0)
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7205,7 +7197,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.325 88.265 0)
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7213,12 +7205,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 187.325 88.265 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7278,12 +7271,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 236.22 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7343,12 +7337,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 173.99 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7408,12 +7403,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 204.47 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7473,12 +7469,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 63.5 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7519,7 +7516,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BGA90C40P10X9_422X397X60"
+		(property "Footprint" "STM32F405OGY6VTR:BGA90C40P10X9_422X397X60"
 			(at 102.87 134.29 0)
 			(effects
 				(font
@@ -7941,12 +7938,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 189.23 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8074,12 +8072,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 36.83 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8276,12 +8275,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 204.47 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8436,7 +8436,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 187.325 106.045 0)
+		(at 187.96 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8444,7 +8444,7 @@
 		(dnp no)
 		(uuid "da018e9c-942e-476f-9232-42f3f0b3225c")
 		(property "Reference" "#PWR0114"
-			(at 187.325 109.855 0)
+			(at 187.96 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8453,7 +8453,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 184.15 101.6 0)
+			(at 184.785 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8462,7 +8462,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.325 106.045 0)
+			(at 187.96 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8471,7 +8471,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.325 106.045 0)
+			(at 187.96 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8479,12 +8479,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 187.325 106.045 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 187.96 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8543,12 +8544,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 137.16 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8642,7 +8644,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 198.755 88.265 90)
+		(at 199.39 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8650,7 +8652,7 @@
 		(dnp no)
 		(uuid "e068662e-0321-4bff-914c-209a932a39e6")
 		(property "Reference" "R15"
-			(at 199.39 83.82 90)
+			(at 200.025 84.455 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8659,7 +8661,7 @@
 			)
 		)
 		(property "Value" "3.3kΩ"
-			(at 200.66 85.725 90)
+			(at 201.295 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8668,7 +8670,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 198.755 90.043 90)
+			(at 199.39 90.678 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8677,7 +8679,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 198.755 88.265 0)
+			(at 199.39 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8686,7 +8688,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 198.755 88.265 0)
+			(at 199.39 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8753,12 +8755,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 195.58 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8818,12 +8821,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 36.83 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8950,12 +8954,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 135.89 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9084,12 +9089,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 58.42 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9148,12 +9154,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 135.89 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9212,12 +9219,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 220.98 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9277,12 +9285,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 109.22 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9342,12 +9351,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 219.71 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9407,12 +9417,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 39.37 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
