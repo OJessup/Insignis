@@ -1,0 +1,518 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "0a2c2d5f-ec03-4264-8d40-9c0a045434b3")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 40.64 82.55)
+		(size 45.72 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "37bee707-2f83-4c44-a399-46b32f71d5e7")
+		(property "Sheetname" "Accelerometer"
+			(at 40.64 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Accelerometer.kicad_sch"
+			(at 40.64 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 129.54)
+		(size 41.91 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "39228faf-053b-40a1-8120-8a34e662ac29")
+		(property "Sheetname" "STM32"
+			(at 101.6 128.8284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STM32.kicad_sch"
+			(at 101.6 155.5246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 208.28 85.09)
+		(size 49.53 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "394f4c38-9763-4446-9123-316f2ff09edb")
+		(property "Sheetname" "eMMC"
+			(at 208.28 84.3784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "eMMC.kicad_sch"
+			(at 208.28 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 82.55)
+		(size 40.64 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3dcc4683-4801-4e70-a092-5cfd223fce7a")
+		(property "Sheetname" "Transceiver"
+			(at 102.87 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Transceiver.kicad_sch"
+			(at 102.87 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 71.12)
+		(size 34.29 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "457a9cff-8ca0-4caa-bc68-e1094feef12b")
+		(property "Sheetname" "Connectors"
+			(at 157.48 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 157.48 92.0246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 208.28 33.02)
+		(size 50.8 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7b10f35d-8818-4e52-87e2-4a86711f2b63")
+		(property "Sheetname" "PowerSupply"
+			(at 208.28 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerSupply.kicad_sch"
+			(at 208.28 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 40.64 129.54)
+		(size 46.99 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8b902676-4ce2-4d14-be58-f512072c1430")
+		(property "Sheetname" "Barometer"
+			(at 40.64 128.8284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Barometer.kicad_sch"
+			(at 40.64 154.2546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 29.21)
+		(size 33.02 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b0cfe881-b9e6-4588-915d-c29f1c68af5c")
+		(property "Sheetname" "ADC"
+			(at 157.48 28.4984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADC.kicad_sch"
+			(at 157.48 53.9246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 102.87)
+		(size 35.56 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c44912c0-a338-4477-bcc8-f885396fa783")
+		(property "Sheetname" "Indication"
+			(at 157.48 102.1584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Indication.kicad_sch"
+			(at 157.48 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 40.64 29.21)
+		(size 44.45 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ce1bfdff-5d06-4342-a09a-162f444c396f")
+		(property "Sheetname" "IMU"
+			(at 40.64 28.4984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IMU.kicad_sch"
+			(at 40.64 65.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 40.64 166.37)
+		(size 46.99 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d4765d39-59a3-4411-ab9d-5a99ec4e2def")
+		(property "Sheetname" "TCAmplifier"
+			(at 40.64 165.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TCAmplifier.kicad_sch"
+			(at 40.64 186.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 29.21)
+		(size 38.1 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f397ab0d-72bd-47c8-b885-d00db3174894")
+		(property "Sheetname" "GPS"
+			(at 102.87 28.4984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "GPS.kicad_sch"
+			(at 102.87 65.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Flight Computer Components"
+				(path "/0a2c2d5f-ec03-4264-8d40-9c0a045434b3"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
